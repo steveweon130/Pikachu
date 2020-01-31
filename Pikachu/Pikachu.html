@@ -9,32 +9,33 @@
 				font-family: Main;
 				src: url(2.ttf);
 			}
-		
 			@font-face {
 				font-family: Sub;
 				src: url(1.ttf);
-			}
-			
+			}	
 			@font-face {
 				font-family: Content;
 				src: url(3.ttf);
-			}
-			
+			}	
 			body {
 				background-image: url("Pikachu.jpg");
 				background-repeat: no-repeat;
+				background-position: center;
 				background-attachment: fixed;
+				background-size: 1300px 730px;
 				margin-left: 50px;
 				margin-right: 50px;
 				font-family: 'content';	
 			}
-		
 			h1 {
 				font-family: 'Main';
 				text-align: center;
 				font-size: 70;
 				color: FFCC03;
 				text-shadow: 10px -10px #3366cc;
+				-webkit-text-stroke-width: 1px;
+				-webkit-text-stroke-color: black;
+				letter-spacing: 5px;
 			}
 		
 			h2 {
@@ -42,17 +43,48 @@
 				text-align: left;
 				font-size: 50;
 				color: FFCC03;
-				text-shadow: 2px -2px #3366cc;
+				text-shadow: 3px -3px #3366cc;
+				letter-spacing: 5px;
 			}
 			ul {
 				list-style-image: url('ball.png');
+				list-style-position: outside;
+			}
+			a:link {
+				color: FFCC03;
+				text-shadow: 10px -10px #3366cc;
+				-webkit-text-stroke-width: 1px;
+				-webkit-text-stroke-color: black;
+			}
+			
+			a:visited {
+				color: red;
+				text-shadow: 10px -10px #3366cc;
+				-webkit-text-stroke-width: 1px;
+				-webkit-text-stroke-color: black;
+			}
+			
+			a:hover {
+				color: #3366cc;
+				text-shadow: 10px -10px #3366cc;
+				-webkit-text-stroke-width: 1px;
+				-webkit-text-stroke-color: black;
+			}
+			
+			a:active {
+				color: red;
+				text-shadow: 10px -10px #3366cc;
+				-webkit-text-stroke-width: 1px;
+				-webkit-text-stroke-color: black;
 			}
 		</style>
 	</head>
 	<body>
 		<p>
 			<h1>
+				<img src="pika.gif" height="100" width="100">
 				Heading 1!
+				<img src="pika.gif" height="100" width="100">
 			</h1>
 			Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
 			Sed pellentesque blandit cursus. Phasellus condimentum maximus volutpat. 
@@ -61,6 +93,7 @@
 			
 			<h2>					
 				Subheading 1!
+				<img src="pokeball.png" height="50" width="50">
 			</h2>				
 			Sed eleifend varius vehicula. 
 			Aliquam a sodales lacus, sed euismod orci.
@@ -72,6 +105,7 @@
 		<p>
 			<h2>
 			Subheading 2!
+			<img src="masterball.png" height="50" width="50">
 			</h2>
 			In dui odio, rutrum a ante non, tempor elementum purus. 
 			Nam ut dictum erat, vitae feugiat lectus. Donec aliquet imperdiet tempor. 
@@ -81,6 +115,7 @@
 		<p>
 			<h2>
 				Subheading 3!
+				<img src="ultraball.png" height="50" width="50">
 			</h2>
 			Vestibulum sollicitudin
 			Nam ut dictum
@@ -93,20 +128,6 @@
 			<div style="font-size:30">
 				List 1!
 			</div>
-			<ol>
-				<li>
-					Item #1
-				</li>
-				<li>
-					Item #2
-				</li>
-				<li>
-					Item #3
-				</li>
-			</ol>
-			<div style="font-size:30">
-				List 2!
-			</div>
 			<ul>
 				<li>
 					Item #1
@@ -117,13 +138,32 @@
 				<li>
 					Item #3
 				</li>
-			</ul>			
-			
+			</ul>
+		</p>
+		<p>
+			<div style="font-size:30">
+				List 2!
+			</div>
+			<ol>
+				<li>
+					Item #1
+				</li>
+				<li>
+					Item #2
+				</li>
+				<li>
+					Item #3
+				</li>
+			</ol>			
+		</p>
 			<h1>
 				<center>
-					
+					<div style="font-size:50">
+						<img src="run.gif" height="100" width="120">
+						Visit The Official <a href="https://www.pokemon.com/us/">Website</a>
+						<img src="run.gif" height="100" width="120">
+					</div>
 				</center>
-				
 			</h1>
 	</body>
 </html>
